@@ -211,7 +211,7 @@ function detectCollision(a, b) {
 }
 
 function updateScore() {
-    let points = Math.floor(50 * Math.random()); //(0-1) *50 --> (0-50)
+    let points = 2;
     if (velocityY < 0) { //negative going up
         maxScore += points;
         if (score < maxScore) {
