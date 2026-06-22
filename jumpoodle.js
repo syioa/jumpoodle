@@ -1,5 +1,3 @@
-//@ts-check
-
 //board
 let board;
 let boardWidth = 360;
@@ -34,6 +32,13 @@ let platformWidth = 60;
 let platformHeight = 18;
 let platformImg;
 
+let highScore = 0;
+if (localStorage.getItem("HI") != null || localStorage.getItem("HI") != undefined) {
+    highScore = localStorage.getItem("HI")
+} else {
+    localStorage.setItem("HI", "0");
+    highScore = localStorage.getItem("HI")
+}
 let score = 0;
 let maxScore = 0;
 let gameOver = false;
@@ -118,8 +123,10 @@ function update() {
     context.fillStyle = "black";
     context.font = "16px sans-serif";
     context.fillText(score, 5, 20);
+    context.fillText(`High Score ${highScore}`, 5, 40)
 
     if (gameOver) {
+        updateHI()
         context.fillText("Game Over: Press 'Space' to Restart", boardWidth / 7, boardHeight * 7 / 8);
     }
 }
@@ -220,5 +227,12 @@ function updateScore() {
     }
     else if (velocityY >= 0) {
         maxScore -= points;
+    }
+}
+
+function updateHI() {
+    if (score > parseInt(highScore)) {
+        highScore = `${score}`;
+        localStorage.setItem("HI", highScore);
     }
 }
