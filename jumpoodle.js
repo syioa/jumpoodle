@@ -119,8 +119,9 @@ function update() {
     }
 
     //score
+
     updateScore();
-    context.fillStyle = "black";
+    context.fillStyle = "white";
     context.font = "16px sans-serif";
     context.fillText(score, 5, 20);
     context.fillText(`High Score ${highScore}`, 5, 40)
