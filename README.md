@@ -1,5 +1,10 @@
 # Jumpoodle
 
+## Installation Instructions
+
+Just open `index.html` in a web browser or serve it via your local server.
+
+
 ## How to Play
 
 - Move left or right with `a`/`ArrowLeft` or `d`/`ArrowRight` respectively.
