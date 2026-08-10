@@ -16,3 +16,9 @@ Just open `index.html` in a web browser or serve it via your local server.
 **Jumpoodle** is distributed under the terms of the MIT License.
 
 See the [LICENSE](/LICENSE) file for license details.
+
+
+## Acknowledgements
+
+- [jiwooji.itch.io](https://jiwooji.itch.io/mario) for the sprite
+
