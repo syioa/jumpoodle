@@ -2,7 +2,14 @@
 
 ## Installation Instructions
 
-Just open `index.html` in a web browser or serve it via your local server.
+1. Clone the repo
+```sh
+git clone https://github.com/syioa/jumpoodle.git
+```
+
+2. And just open `index.html` in a web browser or serve it via your local server.
+
+**PS**: there are no dependencies to install.
 
 
 ## How to Play
